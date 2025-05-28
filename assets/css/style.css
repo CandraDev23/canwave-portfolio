@@ -54,7 +54,7 @@ body {
   transition: opacity 0.5s ease;
 }
 
-.hidden {
+.loader.hidden {
   opacity: 0;
   pointer-events: none;
 }
@@ -125,7 +125,7 @@ nav .navbar {
 }
 
 .navbar a.logo {
-  font-size: 26px;
+  font-size: 24px;
   text-decoration: none;
   color: #323232;
   font-weight: bold;
@@ -185,7 +185,7 @@ nav .navbar-mobile {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 0 20px;
+  padding: 0 28px;
   position: relative;
 }
 
@@ -197,7 +197,7 @@ nav .navbar-mobile {
 }
 
 .navbar-mobile a.logo {
-  font-size: 26px;
+  font-size: 28px;
   text-decoration: none;
   color: #323232;
   font-weight: bold;
