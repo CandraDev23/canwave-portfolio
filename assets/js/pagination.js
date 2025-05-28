@@ -53,7 +53,7 @@ function renderProjects() {
         </div>
         <div class="card-body">
           <h3>${proj.title}</h3>
-          <h5>${proj.category}</h5>
+          <h4>${proj.category}</h4>
           <p>${proj.desc}</p>
         </div>
         <div class="card-footer">
