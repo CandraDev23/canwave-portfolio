@@ -144,6 +144,10 @@ div#nav {
   .navbar-mobile a.logo {
   font-size: 20px;
 }
+#hero {
+  padding-top: calc(68px + 48px);
+
+}
   #hero .text-section h1 {
     font-size: 36px;
     margin: 0;
