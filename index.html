@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio CanWave</title>
+    <!-- Font Awesome 5 -->
+    <link rel="stylesheet" href="assets/fontawesome/css/all.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+  </head>
+  <body>
+    <!-- Loader -->
+    <div class="loader"></div>
+    <button onclick="topFunction()" id="backToTop" title="Go to top">
+      <i class="fas fa-chevron-up"></i>
+    </button>
+    <nav>
+      <div class="navbar">
+        <a class="logo" href="#">CanWave.</a>
+        <ul>
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="#about">Tentang</a></li>
+          <li><a href="#contact">Hubungi</a></li>
+        </ul>
+        <span class="nav-button">
+          <a
+            href="/assets/doc/my_cv.pdf"
+            download="CV Candra Setiawan"
+            class="download-cv-btn"
+            >Unduh CV<i class="fas fa-download"></i
+          ></a>
+        </span>
+      </div>
+      <div class="navbar-mobile">
+        <div class="navbar-mobile-header">
+          <a class="logo" href="#">CanWave.</a>
+          <button class="navbar-mobile-toggle" id="navbar-toggle" onclick="showMenu()">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+        <div class="navbar-body" id="nav-menu">
+          <ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="#about">Tentang</a></li>
+            <li><a href="#contact">Hubungi</a></li>
+          </ul>
+          <span class="nav-button">
+            <a
+              href="/assets/doc/my_cv.pdf"
+              download="CV Candra Setiawan"
+              class="download-cv-btn"
+              >Unduh CV<i class="fas fa-download"></i
+            ></a>
+          </span>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <section id="hero">
+        <div class="text-section">
+          <h1>Hai, Saya <span>Candra</span></h1>
+          <h3>Web Developer dan UI/UX Designer</h3>
+          <p>
+            Menggabungkan desain antarmuka intuitif dengan pengembangan web yang
+            responsif, efficient dan scalable. Untuk menghasilkan solusi digital
+            siap pakai.
+          </p>
+          <a href="#contact" class="hire-btn" id="hire-btn">Rekrut Saya</a>
+        </div>
+        <div class="image-section">
+          <img src="assets/img/photo/typecode_img.jpg" alt="hero image" />
+        </div>
+      </section>
+      <section id="tech-list">
+        <div class="slider">
+          <div class="slide-track">
+            <!-- Ulangi daftar gambar 2x agar bisa seamless saat bergulir -->
+            <div class="slide-item">
+              <img src="assets/img/logos/html_logo.png" alt="html" />
+            </div>
+            <div class="slide-item">
+              <img src="assets/img/logos/css_logo.png" alt="css" />
+            </div>
+            <div class="slide-item">
+              <img
+                src="assets/img/logos/javascript_logo.png"
+                alt="javascript"
+              />
+            </div>
+            <div class="slide-item">
+              <img src="assets/img/logos/bootstrap_logo.png" alt="bootstrap" />
+            </div>
+            <div class="slide-item">
+              <img src="assets/img/logos/react_logo.png" alt="react" />
+            </div>
+            <div class="slide-item">
+              <img src="assets/img/logos/nextjs_logo.png" alt="next" />
+            </div>
+            <div class="slide-item">
+              <img src="assets/img/logos/laravel_logo.png" alt="laravel" />
+            </div>
+            <div class="slide-item">
+              <img src="assets/img/logos/nodejs_logo.png" alt="nodejs" />
+            </div>
+            <div class="slide-item">
+              <img src="assets/img/logos/express_logo.png" alt="expressjs" />
+            </div>
+            <div class="slide-item">
+              <img src="assets/img/logos/mongodb_logo.png" alt="mongodb" />
+            </div>
+            <div class="slide-item">
+              <img src="assets/img/logos/mysql_logo.png" alt="mysql" />
+            </div>
+            <div class="slide-item">
+              <img src="assets/img/logos/git_logo.png" alt="git" />
+            </div>
+            <div class="slide-item">
+              <img src="assets/img/logos/figma_logo.png" alt="figma" />
+            </div>
+
+            <!-- Duplikat -->
+            <div class="slide-item">
+              <img src="assets/img/logos/html_logo.png" alt="html" />
+            </div>
+            <div class="slide-item">
+              <img src="assets/img/logos/css_logo.png" alt="css" />
+            </div>
+            <div class="slide-item">
+              <img
+                src="assets/img/logos/javascript_logo.png"
+                alt="javascript"
+              />
+            </div>
+            <div class="slide-item">
+              <img src="assets/img/logos/bootstrap_logo.png" alt="bootstrap" />
+            </div>
+            <div class="slide-item">
+              <img src="assets/img/logos/react_logo.png" alt="react" />
+            </div>
+            <div class="slide-item">
+              <img src="assets/img/logos/nextjs_logo.png" alt="next" />
+            </div>
+            <div class="slide-item">
+              <img src="assets/img/logos/laravel_logo.png" alt="laravel" />
+            </div>
+            <div class="slide-item">
+              <img src="assets/img/logos/nodejs_logo.png" alt="nodejs" />
+            </div>
+            <div class="slide-item">
+              <img src="assets/img/logos/express_logo.png" alt="expressjs" />
+            </div>
+            <div class="slide-item">
+              <img src="assets/img/logos/mongodb_logo.png" alt="mongodb" />
+            </div>
+            <div class="slide-item">
+              <img src="assets/img/logos/mysql_logo.png" alt="mysql" />
+            </div>
+            <div class="slide-item">
+              <img src="assets/img/logos/git_logo.png" alt="git" />
+            </div>
+            <div class="slide-item">
+              <img src="assets/img/logos/figma_logo.png" alt="figma" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="about">
+        <div class="image-section">
+          <div>
+            <img src="assets/img/photo/myphoto.jpg" alt="my photo" />
+            <div></div>
+          </div>
+        </div>
+        <div class="text-section">
+          <h1>Tentang Saya</h1>
+          <p>
+            Saya adalah seorang Web Developer sekaligus UI/UX Designer yang
+            berfokus pada menciptakan pengalaman digital yang fungsional dan
+            memikat. Dengan latar belakang di bidang desain antarmuka dan
+            pengembangan web, saya mampu menggabungkan estetika visual dengan
+            performa teknis untuk membangun website dan aplikasi yang responsif,
+            intuitif, dan user-friendly.
+          </p>
+        </div>
+      </section>
+      <section id="services">
+        <div>
+          <h1>Layanan</h1>
+          <p>
+            Mendesain dan mengembangkan website dengan fokus pada pengalaman
+            pengguna dan performa maksimal.
+          </p>
+          <div class="services">
+            <div
+              class="card"
+              onclick="window.location.href = 'webdev-detail.html';"
+            >
+              <div class="card-header">
+                <i class="fas fa-code"></i>
+              </div>
+              <div class="card-body">
+                <h3>Web Development</h3>
+                <p>
+                  Membangun website yang responsif, cepat, dan mudah diakses
+                  dari berbagai perangkat. Menggunakan teknologi modern untuk
+                  menciptakan aplikasi web yang handal dan scalable.
+                </p>
+                <!-- Membangun aplikasi web yang responsif dan optimal untuk berbagai perangkat, mulai dari desktop hingga mobile. Menggunakan teknologi terbaru seperti HTML5, CSS3, JavaScript, dan framework populer untuk memastikan website cepat, aman, dan mudah dikembangkan lebih lanjut. Fokus pada clean code dan best practice agar hasil akhir mudah dipelihara dan scalable sesuai kebutuhan bisnis. -->
+              </div>
+              <div class="card-footer">
+                <button
+                  class="read-more-btn"
+                  onclick="window.location.href = 'webdev-detail.html';"
+                >
+                  Detail<i class="fas fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+            <div
+              class="card"
+              onclick="window.location.href = 'uiuxdes-detail.html';"
+            >
+              <div class="card-header">
+                <i class="fas fa-pen-nib"></i>
+              </div>
+              <div class="card-body">
+                <h3>UI/UX Design</h3>
+                <p>
+                  Merancang antarmuka yang intuitif dan menarik, berfokus pada
+                  pengalaman pengguna yang nyaman dan efisien. Membuat prototipe
+                  interaktif untuk memastikan desain sesuai kebutuhan pengguna
+                  dan tujuan bisnis.
+                </p>
+                <!-- Merancang pengalaman pengguna (user experience) yang intuitif dan antarmuka (user interface) yang menarik secara visual. Proses desain mencakup riset pengguna, pembuatan wireframe, prototipe interaktif, dan pengujian usability untuk memastikan produk digital tidak hanya enak dilihat tetapi juga mudah digunakan dan efektif memenuhi kebutuhan pengguna dan bisnis. -->
+              </div>
+              <div class="card-footer">
+                <button
+                  class="read-more-btn"
+                  onclick="window.location.href = 'uiuxdes-detail.html';"
+                >
+                  Detail<i class="fas fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+            <div
+              class="card"
+              onclick="window.location.href = 'databasedev-detail.html';"
+            >
+              <div class="card-header">
+                <i class="fas fa-database"></i>
+              </div>
+              <div class="card-body">
+                <h3>Database Development</h3>
+                <p>
+                  Mendesain dan mengelola database yang terstruktur dengan baik,
+                  memastikan data tersimpan aman, mudah diakses, dan
+                  terintegrasi dengan aplikasi web untuk performa optimal.
+                </p>
+                <!-- Mendesain dan mengimplementasikan database yang efisien dan aman untuk mendukung aplikasi web dan bisnis digital. Melakukan optimasi query, pengaturan struktur data yang tepat, serta integrasi dengan backend untuk memastikan data dapat diakses dengan cepat dan akurat. Juga memastikan keamanan dan backup data agar sistem tetap andal dan terhindar dari kehilangan data. -->
+              </div>
+              <div class="card-footer">
+                <button
+                  class="read-more-btn"
+                  onclick="window.location.href = 'databasedev-detail.html';"
+                >
+                  Detail<i class="fas fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="projects">
+        <h1>Proyek & <span>Karya</span></h1>
+        <p>Hasil dari pekerjaan dan karya saya.</p>
+        <div class="projects">
+          <!-- dynamic card render in js file  -->
+        </div>
+        <div class="pagination-controls">
+          <button id="prevBtn"><i class="fas fa-chevron-left"></i></button>
+          <span id="pageInfo"></span>
+          <button id="nextBtn"><i class="fas fa-chevron-right"></i></button>
+        </div>
+      </section>
+      <section id="contact">
+        <div>
+          <h1>Hubungi Saya</h1>
+          <p>Kontak saya dengan mudah dan cepat melalui formulir ini.</p>
+          <form id="contact-form">
+            <div>
+              <label for="name">Nama</label>
+              <input type="text" id="name" placeholder="Nama" required />
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input type="email" id="email" placeholder="Email" required />
+            </div>
+            <div>
+              <label for="phone">Nomor Telepon</label>
+              <input type="phone" id="phone" placeholder="Nomor Telepon" required />
+            </div>
+            <div>
+              <label for="message">Pesan</label>
+              <textarea
+                id="message"
+                placeholder="Pesan"
+                rows="4"
+                cols="24"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" id="submit-contact-btn">
+              Kirim<i class="far fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+      </section>
+      <section id="connect">
+        <h1>Mari Terhubung</h1>
+        <p>
+          Ikuti saya di media sosial untuk saling berbagi dan terhubung lebih
+          lanjut.
+        </p>
+        <div class="social-media">
+          <h4>Social Media</h4>
+          <div class="social-media-links">
+            <a title="Facebook" href="https://www.facebook.com/chandra.setyawan.7146/"><i class="fab fa-facebook-f"></i></a>
+            <a title="WhatsApp" href="https://wa.me/+6285540262762"><i class="fab fa-whatsapp"></i></a>
+            <a title="Instagram" href="https://www.instagram.com/can_setiawan/"><i class="fab fa-instagram"></i></a>
+            <a title="Linkedin" href="https://www.linkedin.com/in/candra-setiawan-783857253/"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+
+          <h4>Portofolio & Karya</h4>
+          <div class="portfolio-links">
+            <a title="Github" href="https://github.com/CandraDev23"><i class="fab fa-github"></i></a>
+            <a title="Dribbble" href="https://dribbble.com/DesignByCandra"><i class="fab fa-dribbble"></i></a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2025 CanWave. All rights reserved.</p>
+    </footer>
+
+
+    <!-- SweetAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- EmailJS -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <script>
+      emailjs.init("Ydp5kQ0pSXHlxcbMl");
+    </script>
+    <script>
+      document
+        .getElementById("contact-form")
+        .addEventListener("submit", async function (event) {
+          event.preventDefault();
+
+          const name = document.getElementById("name").value.trim();
+          const email = document.getElementById("email").value.trim();
+          const phone = document.getElementById("phone").value.trim();
+          const message = document.getElementById("message").value.trim();
+          const sendButton = document.getElementById("submit-contact-btn");
+
+          if (!name || !email || !phone || !message) {
+            alert("Semua kolom harus diisi.");
+            return;
+          }
+
+          sendButton.disabled = true;
+          sendButton.innerHTML =
+            "Mengirim... <i class='fas fa-spinner fa-spin'></i>";
+          try {
+            await emailjs.send("service_9xcvh19", "template_vjto8k6", {
+              name: name,
+              email: email,
+              phone: phone,
+              message: message,
+            });
+
+            Swal.fire(
+              "Berhasil!",
+              "Pesan telah dikirim. Terima kasih!",
+              "success"
+            );
+
+            // Reset form setelah sukses
+            document.getElementById("contact-form").reset();
+          } catch (error) {
+            Swal.fire("Gagal!", "Tidak bisa mengirim pesan.", "error");
+            console.error("EmailJS error:", error);
+          } finally {
+            // Kembalikan teks tombol dan enable ulang
+            sendButton.innerHTML = "Kirim<i class='far fa-paper-plane'></i>";
+            sendButton.disabled = false;
+          }
+        });
+    </script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/pagination.js"></script>
+    <script src="assets/js/back-to-top.js"></script>
+    <script src="assets/js/my-scroll-reveal.js"></script>
+    <script src="assets/js/loader.js"></script>
+  </body>
+</html>

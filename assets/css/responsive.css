@@ -1,0 +1,426 @@
+/* Tablet Lanskap / Laptop Kecil */
+/* width < 1200px */
+@media screen and (max-width: 1199.98px) {
+  #hero .text-section h1 {
+    font-size: 48px;
+    margin: 0;
+  }
+  #about > .image-section {
+    flex-basis: 100px;
+  }
+  #about > .text-section {
+    flex-basis: 500px;
+  }
+
+  #about > .image-section > div > div {
+    margin-left: 40px; /* offset ke kanan */
+    margin-top: -220px;
+  }
+  #about > .image-section > div > img {
+    margin-top: 0; /* overlap ke atas */
+    margin-left: 60px; /* offset ke kanan */
+  }
+  #services > div .services {
+    width: 100%;
+  }
+  .projects > .card > .card-image {
+    flex: 1 0 150px;
+  }
+  .projects > .card > .card-body {
+    flex: 1 1 370px;
+  }
+}
+
+/* Tablet Portret */
+/* width < 992px */
+@media screen and (max-width: 991.98px) {
+  main > section {
+    padding: 36px 42px;
+  }
+  #hero .text-section h1 {
+    font-size: 36px;
+  }
+  #hero .text-section h3 {
+    font-size: 16px;
+  }
+  #hero .text-section p {
+    font-size: 14px;
+  }
+  #hero .text-section {
+    flex: 1 1 200px;
+  }
+  #hero .text-section a.hire-btn {
+    font-size: 14px;
+  }
+  #about .text-section > h1 {
+    font-size: 20px;
+  }
+  #about .text-section > p {
+    font-size: 14px;
+  }
+  #hero .image-section {
+    flex: 1 1 200px;
+  }
+  #hero .image-section img {
+    width: 100%;
+  }
+
+  #about > .image-section {
+    flex-basis: 60px;
+  }
+  #about > .text-section {
+    flex-basis: 200px;
+  }
+  #about > .image-section > div > div {
+    width: 180px;
+    height: 180px;
+    margin-left: 40px; /* offset ke kanan */
+    margin-top: -180px;
+  }
+  #about > .image-section > div > img {
+    width: 180px;
+    height: 180px;
+    margin-bottom: -20px; /* overlap ke atas */
+    margin-left: 60px; /* offset ke kanan */
+  }
+  #services > div > h1 {
+    font-size: 20px;
+  }
+  #services > div > p {
+    font-size: 14px;
+    width: 80%;
+  }
+  #services > div .services {
+    gap: 12px;
+  }
+  #services .card {
+    flex: 1 1 160px;
+  }
+  .services .card .card-body h3 {
+    font-size: 16px;
+  }
+  .services .card .card-body p {
+    font-size: 13px;
+  }
+  .services .card .card-footer button.read-more-btn {
+    font-size: 13px;
+  }
+  #projects > h1 {
+    font-size: 20px;
+  }
+  #projects > p {
+    font-size: 14px;
+  }
+  .projects {
+    gap: 12px;
+  }
+  .projects > .card {
+    gap: 16px;
+  }
+  .projects > .card h3 {
+    font-size: 16px;
+  }
+  .projects > .card p {
+    font-size: 13px;
+  }
+  .projects > .card > .card-footer > a.open-link-btn {
+    padding: 8px 14px;
+  }
+  .projects > .card > .card-footer > a.open-link-btn i {
+    font-size: 14px;
+  }
+  .pagination-controls {
+    font-size: 14px;
+  }
+  .pagination-controls button {
+    font-size: 10px;
+  }
+  #contact > div > h1 {
+    font-size: 20px;
+  }
+  #contact > div > p {
+    font-size: 14px;
+  }
+  #contact > div > form input,
+  #contact > div > form textarea,
+  label {
+    font-size: 13px;
+  }
+  #contact > div > form button {
+    font-size: 13px;
+  }
+  #connect > h1 {
+    font-size: 20px;
+  }
+  #connect > p {
+    font-size: 14px;
+  }
+  .social-media > h4 {
+    font-size: 14px;
+  }
+  .social-media a {
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+  }
+  footer p {
+    font-size: 14px;
+  }
+}
+
+/* Mobile Besar */
+/* start layout column recomended */
+/* width < 768px */
+@media screen and (max-width: 767.98px) {
+  nav .navbar {
+    display: none;
+  }
+  nav .navbar-mobile {
+    display: flex;
+  }
+  #hero {
+    flex-direction: column-reverse;
+  }
+  #hero .image-section img {
+    width: 80%;
+  }
+  #about {
+    flex-direction: column;
+  }
+  /* Elemen latar belakang (kotak gelap) */
+  #about > .image-section > div > div {
+    width: 300px;
+    height: 300px;
+    margin-left: -5%; /* offset ke kanan */
+    margin-top: -84%;
+  }
+
+  /* Gambar di atasnya */
+  #about > .image-section > div > img {
+    width: 300px;
+    height: 300px;
+    margin-top: 0; /* overlap ke atas */
+    margin-left: 5%; /* offset ke kanan */
+  }
+  #services > div .services {
+    flex-direction: column;
+  }
+  .projects > .card > .card-body {
+  flex: 1 3 340px;
+}
+#service-detail .card .card-footer {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+div#nav {
+  padding-bottom: 12px;
+}
+}
+
+/* Mobile Kecil */
+/* width < 576px */
+@media screen and (max-width: 575.98px) {
+  main > section {
+    padding: 24px 28px;
+  }
+  nav .navbar-mobile {
+    padding: 0 12px;
+  }
+  .navbar-mobile a.logo {
+  font-size: 16px;
+}
+  .navbar-mobile-toggle {
+  padding: 5px 12px;
+  cursor: pointer;
+  font-size: 16px;
+}
+  .navbar-mobile ul li {
+  height: 42px;
+}
+  .navbar-mobile ul li a {
+font-size: 14px;
+}
+.navbar-mobile .nav-button .download-cv-btn {
+font-size: 13px;
+  padding: 7px 15px;
+
+}
+  #hero .image-section img {
+    width: 100%;
+  }
+  #hero .text-section h1 {
+  font-size: 32px;
+}
+#hero .text-section h3 {
+  font-size: 14px;
+  margin: 6px 0;
+}
+
+#hero .text-section p {
+  font-size: 12px;
+  text-align: justify;
+}
+
+#hero .text-section a.hire-btn {
+  font-size: 13px;
+}
+  #about {
+    gap: 30px;
+  }
+  #about .text-section > h1 {
+  font-size: 14px;
+}
+  #about .text-section > p {
+  font-size: 12px;
+}
+  #about > .image-section > div > div {
+    width: 180px;
+    height: 180px;
+    margin-left: -5%; /* offset ke kanan */
+    margin-top: -84%;
+  }
+  /* Gambar di atasnya */
+  #about > .image-section > div > img {
+    width: 180px;
+    height: 180px;
+    margin-top: 0; /* overlap ke atas */
+    margin-left: 5%; /* offset ke kanan */
+  }
+  #about .text-section > h1 {
+    text-align: center;
+}
+  #about .text-section > p {
+    text-align: justify;
+}
+#services > div > h1 {
+  font-size: 14px;
+}
+
+#services > div > p {
+  font-size: 12px;
+  width: 100%;
+}
+.services .card .card-body h3{
+  font-size: 13px;
+  margin-bottom: 4px;
+}
+.services .card .card-body p {
+  font-size: 12px;
+}
+#projects > h1 {
+ font-size: 14px;
+}
+#projects > p {
+  font-size: 12px;
+}
+.projects > .card h3 {
+  font-size: 13px;
+}
+.projects > .card > .card-footer > a.open-link-btn {
+  padding: 8px 16px;
+}
+.open-link-btn > i {
+  font-size: 14px;
+}
+.projects > .card p {
+  font-size: 12px;
+}
+.pagination-controls span {
+  font-size: 12px;
+}
+.pagination-controls button {
+  padding: 8px 15px;
+}
+.pagination-controls button i {
+  font-size: 8px;
+}
+#contact > div > h1 {
+  font-size: 14px;
+}
+#contact > div > p {
+  font-size: 12px;
+}
+#contact > div {
+  margin: 0 auto;
+  width: 100%;
+}
+#contact > div > form {
+  gap: 4px;
+}
+#contact > div > form input,
+#contact > div > form textarea {
+  font-size: 12px;
+  padding: 7px 9px;
+}
+#contact > div > form label {
+  font-size: 12px;
+}
+#contact > div > form button {
+  font-size: 13px;
+  padding: 7px 15px;
+}
+#connect > h1 {
+  font-size: 14px;
+}
+#connect > p {
+  font-size: 12px;
+}
+.social-media > h4 {
+  font-size: 12px;
+}
+.social-media > div {
+  gap: 10px;
+}
+h4 + .social-media-links {
+  margin-bottom: 6px;
+}
+.social-media a {
+  width: 36px;
+  height: 36px;
+}
+.social-media a > i {
+  font-size: 20px;
+}
+.back-btn {
+  font-size: 14px;
+}
+#service-detail .card-header > h1 {
+  font-size: 20px
+}
+#service-detail .card > div p {
+  font-size: 12px;
+}
+.service-list-tech {
+  margin-top: 4px;
+  gap: 8px;
+}
+.service-list-tech button {
+  width: 36px;
+  height: 36px;
+  font-size: 20px;
+}
+.order-btn {
+  padding: 8px 12px;
+  font-size: 13px;
+}
+.order-form {
+  gap: 8px;
+}
+.order-form input,
+.order-form textarea {
+  padding: 7px 9px;
+  font-size: 12px;
+}
+
+.order-form label {
+  font-size: 12px;
+}
+.sub-title-order {
+  font-size: 14px;
+}
+.send-order-btn, .cancel-order-btn {
+  padding: 8px 15px;
+  font-size: 13px;
+}
+}

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detail Layanan</title>
+    <!-- Font Awesome 5 -->
+    <link rel="stylesheet" href="assets/fontawesome/css/all.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+  </head>
+  <body>
+    <div class="loader"></div>
+    <nav>
+      <div class="navbar">
+        <a class="logo" href="#">CanWave.</a>
+        <ul>
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="#about">Tentang</a></li>
+          <li><a href="#contact">Hubungi</a></li>
+        </ul>
+        <span class="nav-button">
+          <a
+            href="/assets/doc/my_cv.pdf"
+            download="CV Candra Setiawan"
+            class="download-cv-btn"
+            >Unduh CV<i class="fas fa-download"></i
+          ></a>
+        </span>
+      </div>
+      <div class="navbar-mobile">
+        <div class="navbar-mobile-header">
+          <a class="logo" href="#">CanWave.</a>
+          <button
+            class="navbar-mobile-toggle"
+            id="navbar-toggle"
+            onclick="showMenu()"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+        <div class="navbar-body" id="nav-menu">
+          <ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="index.html#about">Tentang</a></li>
+            <li><a href="index.html#contact">Hubungi</a></li>
+          </ul>
+          <span class="nav-button">
+            <a
+              href="/assets/doc/my_cv.pdf"
+              download="CV Candra Setiawan"
+              class="download-cv-btn"
+              >Unduh CV<i class="fas fa-download"></i
+            ></a>
+          </span>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <section id="service-detail">
+        <div id="nav">
+          <a href="index.html#services" class="back-btn">
+            <i class="fas fa-chevron-left"></i>Kembali
+          </a>
+          <h4>Detail Layanan</h4>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <h1><i class="fas fa-code"></i>Web Development</h1>
+          </div>
+          <hr />
+          <div>
+            <p>
+              Membangun aplikasi web yang responsif dan optimal untuk berbagai
+              perangkat, mulai dari desktop hingga mobile. Menggunakan teknologi
+              terbaru seperti HTML5, CSS3, JavaScript, dan framework populer
+              untuk memastikan website cepat, aman, dan mudah dikembangkan lebih
+              lanjut. Fokus pada clean code dan best practice agar hasil akhir
+              mudah dipelihara dan scalable sesuai kebutuhan bisnis.
+            </p>
+          </div>
+          <div class="card-footer">
+            <div>
+              <h5>Teknologi yang digunakan:</h5>
+              <div class="service-list-tech">
+                <button title="html"><i class="fab fa-html5"></i></button>
+                <button title="css"><i class="fab fa-css3-alt"></i></button>
+                <button title="js"><i class="fab fa-js-square"></i></button>
+                <button title="php"><i class="fab fa-php"></i></button>
+                <button title="bootstrap">
+                  <i class="fab fa-bootstrap"></i>
+                </button>
+                <button title="react"><i class="fab fa-react"></i></button>
+                <button title="laravel"><i class="fab fa-laravel"></i></button>
+                <button title="nodejs"><i class="fab fa-node-js"></i></button>
+              </div>
+            </div>
+            <button class="order-btn" id="order-btn">Pesan Sekarang</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- SweetAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- EmailJS -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <script>
+      emailjs.init("Ydp5kQ0pSXHlxcbMl");
+    </script>
+    <script>
+      document
+        .getElementById("order-btn")
+        .addEventListener("click", async () => {
+          const { value: formValues } = await Swal.fire({
+            title: "Order Form",
+            html: `
+                    <p class="sub-title-order">Isi kolom di bawah ini, jika anda ingin memesan</p>
+                    <div class="order-form">
+                      <label>Nama</label>
+                      <input type="text" id="order-input-name" placeholder="Nama" required />
+                      <label>Email</label>
+                      <input type="email" id="order-input-email" placeholder="Email" required />
+                      <label>Nomor Telepon</label>
+                      <input type="tel" id="order-input-phone" placeholder="Nomor Telepon" required />
+                      <label>Deskripsi</label>
+                      <textarea id="order-input-description" placeholder="Deskripsi" rows="4" cols="24" required></textarea>
+                    </div>
+                  `,
+            focusConfirm: false,
+            showCancelButton: true,
+            confirmButtonText: "Kirim",
+            customClass: {
+              confirmButton: "send-order-btn",
+              cancelButton: "cancel-order-btn",
+            },
+            reverseButtons: true,
+            preConfirm: () => {
+              const name = document
+                .getElementById("order-input-name")
+                .value.trim();
+              const email = document
+                .getElementById("order-input-email")
+                .value.trim();
+              const phone = document
+                .getElementById("order-input-phone")
+                .value.trim();
+              const description = document
+                .getElementById("order-input-description")
+                .value.trim();
+              if (!name ||!email || !phone || !description) {
+                Swal.showValidationMessage("Semua kolom harus diisi.");
+                return false;
+              }
+              return {
+                service_category: "Website Development",
+                name,
+                email,
+                phone,
+                description,
+              };
+            },
+          });
+          if (formValues) {
+            document.getElementById("order-btn").disabled = true;
+            document.getElementById("order-btn").innerHTML =
+              "Mengirim... <i class='fas fa-spinner fa-spin'></i>";
+            try {
+              // Kirim data ke EmailJS
+              await emailjs.send("service_9xcvh19", "template_bwa57ch", {
+                category: formValues.service_category,
+                name: formValues.name,
+                email: formValues.email,
+                phone: formValues.phone,
+                description: formValues.description,
+              });
+
+              Swal.fire(
+                "Berhasil!",
+                "Berhasil membuat pesanan. Terima kasih telah memesan!\n Pesanan akan segera diproses max 3 jam setelah anda mengirim form ini.",
+                "success"
+              );
+            } catch (error) {
+              Swal.fire(
+                "Gagal!",
+                "Tidak bisa membuat pesanan. \nSilahkan coba lagi",
+                "error"
+              );
+              console.error("EmailJS error:", error);
+            } finally {
+              document.getElementById("order-btn").textContent =
+                "Order Sekarang";
+              document.getElementById("order-btn").disabled = false;
+            }
+          }
+        });
+    </script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/my-scroll-reveal.js"></script>
+    <script src="assets/js/loader.js"></script>
+  </body>
+</html>
