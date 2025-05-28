@@ -145,8 +145,7 @@ div#nav {
   font-size: 20px;
 }
 #hero {
-  padding-top: calc(64px + 48px);
-
+  padding-top: calc(60px + 48px);
 }
   #hero .text-section h1 {
     font-size: 36px;
