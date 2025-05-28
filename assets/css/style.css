@@ -2,6 +2,10 @@ html {
   scroll-behavior: smooth;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 html::selection {
   background-color: #59e4a8;
   color: white;
@@ -123,6 +127,8 @@ nav .navbar {
   justify-content: start;
   flex-flow: row wrap;
   padding: 0 20px;
+  max-width: 1200px; /* samakan dengan konten utama */
+  margin: 0 auto;
 }
 
 .navbar a.logo {
