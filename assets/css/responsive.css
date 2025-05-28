@@ -141,6 +141,9 @@ div#nav {
   main > section {
     padding: 32px 28px;
   }
+  .navbar-mobile a.logo {
+  font-size: 20px;
+}
   #hero .text-section h1 {
     font-size: 36px;
     margin: 0;
@@ -180,22 +183,12 @@ div#nav {
 .projects > .card > .card-footer > a.open-link-btn {
   padding: 8px 16px;
 }
-.pagination-controls button {
-  padding: 8px 15px;
-}
 #contact > div {
   margin: 0 auto;
   width: 100%;
 }
 #contact > div > form {
   gap: 4px;
-}
-#contact > div > form input,
-#contact > div > form textarea {
-  padding: 7px 9px;
-}
-#contact > div > form button {
-  padding: 7px 15px;
 }
 .social-media > div {
   gap: 10px;
@@ -216,12 +209,5 @@ h4 + .social-media-links {
 }
 .order-form {
   gap: 8px;
-}
-.order-form input,
-.order-form textarea {
-  padding: 7px 9px;
-}
-.send-order-btn, .cancel-order-btn {
-  padding: 8px 15px;
 }
 }
