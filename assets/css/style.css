@@ -107,15 +107,14 @@ main {
 }
 
 nav {
-  /* position: fixed;
-  z-index: 999; */
+  position: fixed;
+  z-index: 999;
   padding: 7px 0;
   background-color: white;
-  /* top: 0;
+  top: 0;
   left: 0;
-  width: 100%; */
+  width: 100%;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-  z-index: 999;
 }
 
 nav .navbar {
@@ -304,6 +303,7 @@ main > section {
 }
 
 #hero {
+  padding-top: calc(74px + 48px);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -795,8 +795,12 @@ h4 + .social-media-links {
   margin: 0;
 }
 
+#service-detail {
+  padding-top: calc(74px + 48px);
+}
+
 div#nav {
-  padding-bottom: 36px;
+  padding-bottom: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
