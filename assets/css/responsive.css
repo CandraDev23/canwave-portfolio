@@ -37,6 +37,9 @@
   main > section {
     padding: 36px 42px;
   }
+  #hero {
+  padding-top: calc(72px + 42);
+}
   #hero .text-section {
     flex: 1 1 200px;
   }
@@ -145,7 +148,7 @@ div#nav {
   font-size: 20px;
 }
 #hero {
-  padding-top: calc(54px + 48px);
+  padding-top: calc(74px + 32px);
 }
   #hero .text-section h1 {
     font-size: 36px;
