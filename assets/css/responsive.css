@@ -38,7 +38,7 @@
     padding: 36px 42px;
   }
   #hero {
-  padding-top: calc(72px + 42);
+  padding-top: calc(72px + 42px);
 }
   #hero .text-section {
     flex: 1 1 200px;
@@ -86,6 +86,9 @@
   .projects > .card {
     gap: 16px;
   }
+  #service-detail {
+  padding-top: calc(72px + 42px);
+}
 }
 
 /* Mobile Besar */
@@ -211,5 +214,8 @@ h4 + .social-media-links {
 }
 .order-form {
   gap: 8px;
+}
+#service-detail {
+  padding-top: calc(74px + 32px);
 }
 }
