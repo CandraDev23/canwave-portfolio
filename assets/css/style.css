@@ -309,7 +309,7 @@ main > section {
 }
 
 #hero {
-  padding-top: calc(74px + 48px);
+  padding-top: calc(72px + 48px);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
