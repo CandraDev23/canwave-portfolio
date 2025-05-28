@@ -40,6 +40,9 @@
   #hero .text-section {
     flex: 1 1 200px;
   }
+  #hero .text-section h1 {
+    font-size: 40px;
+  }
   #hero .image-section {
     flex: 1 1 200px;
   }

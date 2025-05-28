@@ -125,7 +125,7 @@ nav .navbar {
 }
 
 .navbar a.logo {
-  font-size: larger;
+  font-size: 26px;
   text-decoration: none;
   color: #323232;
   font-weight: bold;
@@ -197,7 +197,7 @@ nav .navbar-mobile {
 }
 
 .navbar-mobile a.logo {
-  font-size: larger;
+  font-size: 26px;
   text-decoration: none;
   color: #323232;
   font-weight: bold;
