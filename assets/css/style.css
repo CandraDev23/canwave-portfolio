@@ -379,7 +379,7 @@ main > section {
 
 .slide-track {
   display: flex;
-  gap: 48px;
+  gap: 64px;
   width: max-content; /* 26 item + 25 gap antar item */
   animation: scroll 30s linear infinite;
 }

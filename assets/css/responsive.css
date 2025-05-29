@@ -160,6 +160,9 @@ div#nav {
   #hero .image-section img {
     width: 90%;
   }
+  .slide-track {
+  gap: 48px;
+}
   #about {
     gap: 30px;
   }
