@@ -189,9 +189,6 @@ div#nav {
 .services .card .card-body h3{
   margin-bottom: 4px;
 }
-.projects > .card > .card-footer > a.open-link-btn {
-  padding: 8px 16px;
-}
 #contact > div {
   margin: 0 auto;
   width: 100%;
