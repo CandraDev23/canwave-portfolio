@@ -2,9 +2,9 @@ html {
   scroll-behavior: smooth;
 }
 
-html, body {
+/* html, body {
   overflow-x: hidden;
-}
+} */
 
 html::selection {
   background-color: #59e4a8;
@@ -83,6 +83,8 @@ main {
   opacity: 0;
   transition: opacity 0.5s ease;
   min-height: 100vh;
+  max-width: 1200px; /* samakan dengan konten utama */
+  margin: 0 auto;
 }
 
 #backToTop {
@@ -111,24 +113,34 @@ main {
 }
 
 nav {
-  position: fixed;
+  position: sticky;
   z-index: 999;
   padding: 7px 0;
   background-color: white;
   top: 0;
   left: 0;
   width: 100%;
-  box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+  margin: 0 auto;
+  max-width: 1200px; /* samakan dengan konten utama */
+}
+
+#progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  background-color: #59e4a8;
+  width: 0%;
+  z-index: 1000;
+  transition: width 0.1s ease;
 }
 
 nav .navbar {
+  padding: 0 64px;
   display: flex;
   align-items: center;
   justify-content: start;
   flex-flow: row wrap;
-  padding: 0 20px;
-  max-width: 1200px; /* samakan dengan konten utama */
-  margin: 0 auto;
 }
 
 .navbar a.logo {
@@ -192,7 +204,7 @@ nav .navbar-mobile {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 6px 20px;
+  padding: 6px 42px;
   position: relative;
 }
 
@@ -309,7 +321,6 @@ main > section {
 }
 
 #hero {
-  padding-top: calc(72px + 48px);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -523,7 +534,7 @@ main > section {
   transition: all 0.5s ease;
 }
 
-.services .card:hover > .card-header i{
+.services .card:hover > .card-header i {
   color: #59e4a8;
 }
 
@@ -631,6 +642,8 @@ main > section {
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
+  flex-direction: column;
+  gap: 12px;
 }
 
 .projects > .card > .card-footer > a.open-link-btn {
@@ -730,6 +743,7 @@ main > section {
   border-radius: 6px;
   border: #b6b6b6 1px solid;
   box-sizing: border-box;
+  resize: vertical;
 }
 
 #contact > div > form input:focus,
@@ -799,10 +813,6 @@ h4 + .social-media-links {
 
 .social-media a > i {
   margin: 0;
-}
-
-#service-detail {
-  padding-top: calc(72px + 48px);
 }
 
 div#nav {

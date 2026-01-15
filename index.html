@@ -19,8 +19,10 @@
       <div class="navbar">
         <a class="logo" href="#">CanWave.</a>
         <ul>
-          <li><a href="index.html">Beranda</a></li>
           <li><a href="#about">Tentang</a></li>
+          <li><a href="#about">Proyek</a></li>
+          <li><a href="#about">Pengalaman</a></li>
+          <li><a href="#about">Sertifikat</a></li>
           <li><a href="#contact">Hubungi</a></li>
         </ul>
         <span class="nav-button">
@@ -35,7 +37,11 @@
       <div class="navbar-mobile">
         <div class="navbar-mobile-header">
           <a class="logo" href="#">CanWave.</a>
-          <button class="navbar-mobile-toggle" id="navbar-toggle" onclick="showMenu()">
+          <button
+            class="navbar-mobile-toggle"
+            id="navbar-toggle"
+            onclick="showMenu()"
+          >
             <i class="fas fa-bars"></i>
           </button>
         </div>
@@ -56,6 +62,7 @@
         </div>
       </div>
     </nav>
+    <div id="progress-bar"></div>
     <main>
       <section id="hero">
         <div class="text-section">
@@ -66,7 +73,7 @@
             responsif, efficient dan scalable. Untuk menghasilkan solusi digital
             siap pakai.
           </p>
-          <a href="#contact" class="hire-btn" id="hire-btn">Rekrut Saya</a>
+          <a href="#contact" class="hire-btn" id="hire-btn">Hubungi Saya</a>
         </div>
         <div class="image-section">
           <img src="assets/img/photo/typecode_img.jpg" alt="hero image" />
@@ -272,8 +279,8 @@
         </div>
       </section>
       <section id="projects">
-        <h1>Proyek & <span>Karya</span></h1>
-        <p>Hasil dari pekerjaan dan karya saya.</p>
+        <h1>Proyek</h1>
+        <p>Proyek yang telah saya kerjakan.</p>
         <div class="projects">
           <!-- dynamic card render in js file  -->
         </div>
@@ -298,7 +305,12 @@
             </div>
             <div>
               <label for="phone">Nomor Telepon</label>
-              <input type="phone" id="phone" placeholder="Nomor Telepon" required />
+              <input
+                type="phone"
+                id="phone"
+                placeholder="Nomor Telepon"
+                required
+              />
             </div>
             <div>
               <label for="message">Pesan</label>
@@ -325,16 +337,32 @@
         <div class="social-media">
           <h4>Social Media</h4>
           <div class="social-media-links">
-            <a title="Facebook" href="https://www.facebook.com/chandra.setyawan.7146/"><i class="fab fa-facebook-f"></i></a>
-            <a title="WhatsApp" href="https://wa.me/+6285540262762"><i class="fab fa-whatsapp"></i></a>
-            <a title="Instagram" href="https://www.instagram.com/can_setiawan/"><i class="fab fa-instagram"></i></a>
-            <a title="Linkedin" href="https://www.linkedin.com/in/candra-setiawan-783857253/"><i class="fab fa-linkedin-in"></i></a>
+            <a
+              title="Facebook"
+              href="https://www.facebook.com/chandra.setyawan.7146/"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a title="WhatsApp" href="https://wa.me/+6285540262762"
+              ><i class="fab fa-whatsapp"></i
+            ></a>
+            <a title="Instagram" href="https://www.instagram.com/can_setiawan/"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a
+              title="Linkedin"
+              href="https://www.linkedin.com/in/candra-setiawan-783857253/"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
           </div>
 
           <h4>Portofolio & Karya</h4>
           <div class="portfolio-links">
-            <a title="Github" href="https://github.com/CandraDev23"><i class="fab fa-github"></i></a>
-            <a title="Dribbble" href="https://dribbble.com/DesignByCandra"><i class="fab fa-dribbble"></i></a>
+            <a title="Github" href="https://github.com/CandraDev23"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a title="Dribbble" href="https://dribbble.com/DesignByCandra"
+              ><i class="fab fa-dribbble"></i
+            ></a>
           </div>
         </div>
       </section>
@@ -342,7 +370,6 @@
     <footer>
       <p>&copy; 2025 CanWave. All rights reserved.</p>
     </footer>
-
 
     <!-- SweetAlert2 -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
