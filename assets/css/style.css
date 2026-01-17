@@ -476,7 +476,6 @@ main > section {
 #services > div .services {
   background-color: white;
   margin: 0 auto;
-  width: 80%;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -618,7 +617,7 @@ main > section {
 .projects > .card p {
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 4;
   overflow: hidden;
 }
 
@@ -983,4 +982,361 @@ footer {
 }
 footer p {
   color: white;
+}
+
+#certificates > h1,
+#certificates > p {
+  margin: 0 auto;
+  text-align: center;
+}
+
+#certificates > h1 {
+  margin: 0 0 4px;
+}
+
+#certificates > p {
+  margin-bottom: 12px;
+}
+
+.certificates {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.certificates .card {
+  background-color: transparent;
+  padding: 0;
+  border-radius: 0;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.cert-card-wrapper {
+  background-color: white;
+  padding: 12px;
+  border-radius: 8px;
+  border: #b6b6b6 1px solid;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  transition: all 0.3s ease;
+}
+
+.certificates .card:hover .cert-card-wrapper {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  border-color: #b6b6b6;
+}
+
+.cert-card-image {
+  width: 100%;
+  height: 200px;
+  border-radius: 6px;
+  overflow: hidden;
+  margin-bottom: 12px;
+  background-color: #f5f5f5;
+}
+
+.cert-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cert-card-body {
+  flex: 1;
+  margin-bottom: 10px;
+}
+
+.cert-card-body h3 {
+  font-size: 15px;
+  margin: 0 0 4px;
+  line-height: 1.3;
+  color: #323232;
+  font-weight: 700;
+}
+
+.cert-card-body h4 {
+  font-size: 13px;
+  color: #666;
+  margin: 0 0 4px;
+  font-weight: 600;
+}
+
+.cert-card-body p {
+  font-size: 12px;
+  color: #999;
+  margin: 0;
+}
+
+.cert-card-footer {
+  text-align: center;
+}
+
+.preview-cert-btn {
+  cursor: pointer;
+  border: none;
+  background-color: #323232;
+  padding: 8px 14px;
+  border-radius: 6px;
+  color: white;
+  transition: all 0.5s ease;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.preview-cert-btn:hover {
+  background-color: #59e4a8;
+  color: #323232;
+}
+
+.cert-modal {
+  position: fixed;
+  z-index: 1001;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 0.3s ease;
+}
+
+.cert-modal-content {
+  position: relative;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 600px;
+  max-height: 80vh;
+  overflow: auto;
+  text-align: center;
+  animation: slideUp 0.3s ease;
+}
+
+.cert-modal-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin-bottom: 12px;
+}
+
+.cert-modal-content p {
+  font-weight: bold;
+  margin: 0;
+  color: #323232;
+}
+
+.cert-modal-close {
+  position: absolute;
+  right: 16px;
+  top: 8px;
+  font-size: 32px;
+  cursor: pointer;
+  color: #666;
+  transition: color 0.3s ease;
+  line-height: 1;
+}
+
+.cert-modal-close:hover {
+  color: #000;
+}
+
+.exp-modal {
+  position: fixed;
+  z-index: 1001;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 0.3s ease;
+}
+
+.exp-modal-content {
+  position: relative;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 600px;
+  max-height: 80vh;
+  overflow: auto;
+  text-align: center;
+  animation: slideUp 0.3s ease;
+}
+
+.exp-modal-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin-bottom: 12px;
+}
+
+.exp-modal-content p {
+  font-weight: bold;
+  margin: 0;
+  color: #323232;
+}
+
+.exp-modal-close {
+  position: absolute;
+  right: 16px;
+  top: 8px;
+  font-size: 32px;
+  cursor: pointer;
+  color: #666;
+  transition: color 0.3s ease;
+  line-height: 1;
+}
+
+.exp-modal-close:hover {
+  color: #000;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+#experience > h1,
+#experience > p {
+  margin: 0 auto;
+  text-align: center;
+}
+
+#experience > h1 {
+  margin: 0 0 4px;
+}
+
+#experience > p {
+  margin-bottom: 12px;
+}
+
+.experience-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.exp-card {
+  background-color: transparent;
+  padding: 0;
+  border-radius: 0;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  transition: all 0.3s ease;
+}
+
+.exp-card-wrapper {
+  background-color: white;
+  padding: 12px;
+  border-radius: 8px;
+  border: #b6b6b6 1px solid;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  height: 100%;
+  transition: all 0.3s ease;
+}
+
+.exp-card:hover .exp-card-wrapper {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  border-color: #b6b6b6;
+}
+
+.exp-card-image {
+  width: 100%;
+  height: 200px;
+  border-radius: 6px;
+  overflow: hidden;
+  background-color: #f5f5f5;
+}
+
+.exp-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.exp-card-icon {
+  display: none;
+}
+
+.exp-card-body {
+  flex: 1;
+  margin-bottom: 10px;
+}
+
+.exp-card-body h3 {
+  font-size: 15px;
+  margin: 0 0 4px;
+  line-height: 1.3;
+  color: #323232;
+  font-weight: 700;
+}
+
+.exp-card-body h4 {
+  font-size: 13px;
+  color: #666;
+  margin: 0 0 4px;
+  font-weight: 600;
+}
+
+.exp-period {
+  font-size: 12px;
+  color: #999;
+  margin: 0;
+}
+
+.exp-description {
+  display: none;
+}
+
+.exp-card-footer {
+  text-align: center;
+}
+
+.preview-exp-btn {
+  cursor: pointer;
+  border: none;
+  background-color: #323232;
+  padding: 8px 14px;
+  border-radius: 6px;
+  color: white;
+  transition: all 0.5s ease;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.preview-exp-btn:hover {
+  background-color: #59e4a8;
+  color: #323232;
 }

@@ -20,10 +20,9 @@
         <a class="logo" href="#">CanWave.</a>
         <ul>
           <li><a href="#about">Tentang</a></li>
-          <li><a href="#about">Proyek</a></li>
-          <li><a href="#about">Pengalaman</a></li>
-          <li><a href="#about">Sertifikat</a></li>
-          <li><a href="#contact">Hubungi</a></li>
+          <li><a href="#projects">Proyek</a></li>
+          <li><a href="#certificates">Sertifikat</a></li>
+          <li><a href="#experience">Pengalaman</a></li>
         </ul>
         <span class="nav-button">
           <a
@@ -47,9 +46,10 @@
         </div>
         <div class="navbar-body" id="nav-menu">
           <ul>
-            <li><a href="index.html">Beranda</a></li>
-            <li><a href="#about">Tentang</a></li>
-            <li><a href="#contact">Hubungi</a></li>
+<li><a href="#about">Tentang</a></li>
+          <li><a href="#projects">Proyek</a></li>
+          <li><a href="#certificates">Sertifikat</a></li>
+          <li><a href="#experience">Pengalaman</a></li>
           </ul>
           <span class="nav-button">
             <a
@@ -290,6 +290,29 @@
           <button id="nextBtn"><i class="fas fa-chevron-right"></i></button>
         </div>
       </section>
+      <section id="certificates">
+        <h1>Sertifikat</h1>
+        <div class="certificates">
+          <!-- dynamic card render in js file  -->
+        </div>
+        <div class="pagination-controls">
+          <button id="prevCertBtn"><i class="fas fa-chevron-left"></i></button>
+          <span id="certPageInfo"></span>
+          <button id="nextCertBtn"><i class="fas fa-chevron-right"></i></button>
+        </div>
+      </section>
+      <section id="experience">
+        <h1>Pengalaman</h1>
+        <p>Pengalaman kerja yang telah saya jalani.</p>
+        <div class="experience-list">
+          <!-- dynamic card render in js file  -->
+        </div>
+        <div class="pagination-controls">
+          <button id="prevExpBtn"><i class="fas fa-chevron-left"></i></button>
+          <span id="expPageInfo"></span>
+          <button id="nextExpBtn"><i class="fas fa-chevron-right"></i></button>
+        </div>
+      </section>
       <section id="contact">
         <div>
           <h1>Hubungi Saya</h1>
@@ -430,6 +453,7 @@
     </script>
     <script src="assets/js/script.js"></script>
     <script src="assets/js/pagination.js"></script>
+    <script src="assets/js/certificates-experience.js"></script>
     <script src="assets/js/back-to-top.js"></script>
     <script src="assets/js/my-scroll-reveal.js"></script>
     <script src="assets/js/loader.js"></script>

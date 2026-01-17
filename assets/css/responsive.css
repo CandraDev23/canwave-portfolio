@@ -92,11 +92,87 @@
   #service-detail {
     padding-top: 42px;
   }
+
+  .certificates {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .certificates .card {
+    padding: 0;
+  }
+
+  .cert-card-wrapper {
+    padding: 10px;
+  }
+
+  .cert-card-image {
+    height: 160px;
+    margin-bottom: 8px;
+  }
+
+  .cert-card-body h3 {
+    font-size: 13px;
+  }
+
+  .cert-card-body h4 {
+    font-size: 11px;
+  }
+
+  .cert-card-body p {
+    font-size: 10px;
+  }
+
+  .preview-cert-btn {
+    padding: 6px 10px;
+    font-size: 10px;
+  }
+
+  .cert-modal-content {
+    max-width: 90%;
+    padding: 16px;
+  }
+
+  .experience-list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .exp-card {
+    gap: 0;
+  }
+
+  .exp-card-wrapper {
+    gap: 12px;
+    padding: 14px;
+  }
+
+  .exp-card-icon {
+    display: none;
+  }
+
+  .exp-card-image {
+    height: 150px;
+  }
+
+  .exp-card-body h3 {
+    font-size: 15px;
+  }
+
+  .exp-card-body h4 {
+    font-size: 12px;
+  }
+
+  .exp-period {
+    font-size: 11px;
+  }
+
+  .exp-description {
+    display: none;
+  }
 }
 
-/* Mobile Besar */
-/* start layout column recomended */
-/* width < 768px */
+/* Mobile Besar - width < 768px */
 @media screen and (max-width: 767.98px) {
   nav .navbar {
     display: none;
@@ -142,10 +218,66 @@
   div#nav {
     padding-bottom: 12px;
   }
+
+  .certificates {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .certificates .card {
+    padding: 0;
+  }
+
+  .cert-card-wrapper {
+    padding: 10px;
+  }
+
+  .cert-card-image {
+    height: 150px;
+  }
+
+  .experience-list {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .exp-card {
+    gap: 0;
+  }
+
+  .exp-card-wrapper {
+    flex-direction: column;
+    gap: 12px;
+    padding: 12px;
+  }
+
+  .exp-card-icon {
+    display: none;
+  }
+
+  .exp-card-image {
+    height: 150px;
+    display: block;
+  }
+
+  .exp-card-body h3 {
+    font-size: 14px;
+  }
+
+  .exp-card-body h4 {
+    font-size: 11px;
+  }
+
+  .exp-period {
+    font-size: 10px;
+  }
+
+  .exp-description {
+    display: none;
+  }
 }
 
-/* Mobile Kecil */
-/* width < 576px */
+/* Mobile Kecil - width < 576px */
 @media screen and (max-width: 575.98px) {
   main > section {
     padding: 32px 28px;
@@ -223,5 +355,88 @@
   }
   #service-detail {
     padding-top: +32px;
+  }
+
+  .certificates {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .certificates .card {
+    padding: 0;
+  }
+
+  .cert-card-wrapper {
+    padding: 10px;
+  }
+
+  .cert-card-image {
+    height: 160px;
+    margin-bottom: 8px;
+  }
+
+  .cert-card-body h3 {
+    font-size: 13px;
+  }
+
+  .cert-card-body h4 {
+    font-size: 11px;
+  }
+
+  .cert-card-body p {
+    font-size: 10px;
+  }
+
+  .preview-cert-btn {
+    padding: 6px 10px;
+    font-size: 10px;
+  }
+
+  .cert-modal-content {
+    max-width: 90%;
+    padding: 16px;
+  }
+
+  .experience-list {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .exp-card {
+    gap: 0;
+  }
+
+  .exp-card-wrapper {
+    flex-direction: column;
+    gap: 12px;
+    padding: 12px;
+  }
+
+  .exp-card-icon {
+    display: none;
+  }
+
+  .exp-card-image {
+    height: 140px;
+    display: block;
+  }
+
+  .exp-card-body h3 {
+    font-size: 14px;
+    margin: 0 0 2px;
+  }
+
+  .exp-card-body h4 {
+    font-size: 11px;
+    margin: 0 0 2px;
+  }
+
+  .exp-period {
+    font-size: 10px;
+    margin: 0 0 4px;
+  }
+
+  .exp-description {
+    display: none;
   }
 }
