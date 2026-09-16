@@ -172,6 +172,26 @@
   }
 }
 
+/* Keep navbar actions stacked before the hamburger layout begins. */
+@media screen and (max-width: 850px) and (min-width: 768px) {
+  nav .navbar {
+    align-items: flex-start;
+  }
+
+  .navbar .language-switch,
+  .navbar .nav-button {
+    flex-basis: 100%;
+    align-self: center;
+    margin-left: 0;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .navbar .nav-button {
+    margin-top: 8px;
+  }
+}
+
 /* Mobile Besar - width < 768px */
 @media screen and (max-width: 767.98px) {
   nav .navbar {

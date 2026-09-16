@@ -400,8 +400,20 @@ nav .navbar-mobile {
   color: white;
 }
 
-.navbar-mobile .language-switch {
+.navbar-mobile .navbar-body > .language-switch,
+.navbar-mobile .navbar-body > .nav-button {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-left: 0;
+}
+
+.navbar-mobile .navbar-body > .language-switch {
   margin: 2px auto 18px;
+}
+
+.navbar-mobile .navbar-body > .nav-button {
+  margin: 0 auto;
 }
 
 main > section {
