@@ -1,6 +1,7 @@
 (function () {
   const translations = {
-    "Portofolio CanWave": "CanWave Portfolio",
+    "Portofolio Candra": "Candra Portfolio",
+    "Portofolio": "Portfolio",
     "Detail Layanan": "Service Details",
     "Tentang": "About",
     "Proyek": "Projects",
