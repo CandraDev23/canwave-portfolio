@@ -198,6 +198,90 @@ nav .navbar {
   color: white;
 }
 
+.language-switch {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  margin-left: auto;
+  color: #323232;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  user-select: none;
+  line-height: 1;
+}
+
+.navbar .language-switch + .nav-button {
+  margin-left: 16px;
+}
+
+.language-toggle-input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.language-switch > span:first-child,
+.language-switch > span:last-child {
+  min-width: 16px;
+  text-align: center;
+  opacity: 0.5;
+  transition: color 0.25s ease, opacity 0.25s ease;
+}
+
+.language-switch > span:first-child {
+  opacity: 1;
+}
+
+.language-slider {
+  position: relative;
+  width: 36px;
+  height: 20px;
+  border: 1px solid #bcbcbc;
+  border-radius: 12px;
+  background-color: #f1f1f1;
+  box-shadow: inset 0 1px 2px rgba(50, 50, 50, 0.12);
+  transition: background-color 0.25s ease, border-color 0.25s ease;
+}
+
+.language-slider::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #323232;
+  box-shadow: 0 1px 3px rgba(50, 50, 50, 0.28);
+  transition: transform 0.25s ease, background-color 0.25s ease;
+}
+
+.language-toggle-input:checked + .language-slider {
+  background-color: #59e4a8;
+  border-color: #59e4a8;
+}
+
+.language-toggle-input:checked + .language-slider::after {
+  background-color: white;
+  transform: translateX(16px);
+}
+
+.language-toggle-input:checked + .language-slider + span {
+  color: #323232;
+  opacity: 1;
+}
+
+.language-toggle-input:checked ~ span:first-child {
+  opacity: 0.5;
+}
+
+.language-toggle-input:focus-visible + .language-slider {
+  outline: 2px solid #59e4a8;
+  outline-offset: 3px;
+}
+
 /* Navbar Mobile */
 nav .navbar-mobile {
   display: none;
@@ -314,6 +398,10 @@ nav .navbar-mobile {
 .navbar-mobile .nav-button .download-cv-btn:hover {
   background-color: #323232;
   color: white;
+}
+
+.navbar-mobile .language-switch {
+  margin: 2px auto 18px;
 }
 
 main > section {
